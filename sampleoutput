@@ -1,0 +1,65 @@
+Data Loaded:
+    Order_ID Customer_ID     Product     Category  Price  Quantity  Order_Date Region  Revenue
+0      1001        C001      Laptop  Electronics  50000         1  01-01-2024  South    50000
+1      1002        C002       Phone  Electronics  20000         2  02-01-2024  North    40000
+2      1003        C003       Shoes      Fashion   3000         1  03-01-2024   West     3000
+3      1004        C004     T-shirt      Fashion    800         3  04-01-2024   East     2400
+4      1005        C001  Headphones  Electronics   2000         2  05-01-2024  South     4000
+
+Total Revenue: 333200
+
+Sales by Product:
+ Product
+Headphones      9000
+Laptop        150000
+Phone         125000
+Sandals         2400
+Shoes          16400
+T-shirt         7200
+Tablet         15000
+Watch           8200
+Name: Revenue, dtype: int64
+
+Sales by Category:
+ Category
+Accessories      8200
+Electronics    299000
+Fashion         26000
+Name: Revenue, dtype: int64
+
+Customer Segments:
+ Customer_ID
+C001      High Value
+C002    Medium Value
+C003       Low Value
+C004       Low Value
+C005       Low Value
+C006       Low Value
+C007    Medium Value
+C008      High Value
+C009       Low Value
+C010       Low Value
+C011    Medium Value
+C012       Low Value
+C013       Low Value
+C014    Medium Value
+C015       Low Value
+C016       Low Value
+C017    Medium Value
+Name: Revenue, dtype: object
+
+Model Accuracy (R2 Score): 0.33946279273502744
+
+Future Predictions:
+    Day  Product_Code  Price  Predicted_Sales
+0   25             0  50000         1.066306
+1   26             1  20000         1.759627
+2   27             2   3000         2.103037
+3   28             0  48000         1.129096
+4   29             1  21000         1.741669
+
+Feature Importance:
+         Feature  Importance
+0           Day    0.002986
+1  Product_Code   -0.117153
+2         Price   -0.000027
